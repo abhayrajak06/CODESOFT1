@@ -1,42 +1,77 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
+body{
+  background-color: rgba(4, 6, 26, 0.88);
+}
+
+.nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem ;
+  flex-wrap: wrap;
+}
+.nav-left{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.nav-right h2{
+  display: flex;
+  font-size: 1rem;
+  justify-content: end;
+  color: whitesmoke;
+}
+.nav-right h1{
+  font-size: 1.5rem;
+  color: whitesmoke;
+}
+.nav-right{
+  align-self: flex-end;
+}
+.nav img{
+  height: 20rem;
+  width: 20rem;
+  border-radius: 11rem;
+  border: 0.4rem solid rgb(192, 186, 186);
+  box-shadow: rgba(211, 209, 209, 0.35) 0px 5px 15px;
+  cursor: pointer;
+}
+.nav img:hover{
+  box-shadow: rgba(199, 198, 198, 0.35) 0px 22px 70px 4px;
+}
+
+.section{
   padding: 2rem;
+  background-color: rgb(65, 63, 61);
+  color: whitesmoke;
+  margin: 0 4rem;
+  margin-bottom: 2rem;
+  box-shadow: rgba(20, 20, 36, 0.25) 0px 50px 100px -20px, rgba(88, 88, 88, 0.3) 0px 30px 60px -30px, rgba(202, 206, 209, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.section:hover{
+  transform: scale(1.005);
+  transition: 400ms;
+}
+.section h1{
+  font-weight: bold;
+  color: rgb(236, 106, 14);
+}
+
+.footer{
   text-align: center;
+  margin: 2rem;
+  margin-top: 4rem;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width:550px) {
+  .nav{
+    justify-content: center;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
