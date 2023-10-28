@@ -6,6 +6,9 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./components/pages/Home";
 import Header from "./components/Layout/Header";
 import Footer from "./components/Layout/Footer";
+import About from "./components/pages/About";
+import Contact from "./components/pages/Contact";
+import Policy from "./components/pages/Policy";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -15,6 +18,9 @@ function App() {
       {/* <Header /> */}
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/policy" element={<Policy />} />
       </Routes>
       {/* <Footer /> */}
       {/* <div>

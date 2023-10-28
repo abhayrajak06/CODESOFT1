@@ -3,11 +3,11 @@ import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div>
+    <div style={{ position: "sticky", top: "0" }}>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
           <NavLink
-            className="navbar-brand"
+            className="navbar-brand text-light"
             style={{ fontWeight: "bold" }}
             to={"/"}
           >

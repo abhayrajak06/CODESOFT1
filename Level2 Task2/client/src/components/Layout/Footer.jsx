@@ -12,8 +12,32 @@ const Footer = () => {
     >
       <h5>Copyright &copy; {new Date().getFullYear()} Job Board</h5>
       <p className="m-3 text-center">
-        <Link to={"/about"}>About</Link> |<Link to={"/contact"}>Contact</Link> |
-        <Link to={"/policy"}>Privacy Policy</Link>
+        <Link
+          to={"/about"}
+          onClick={() => {
+            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+          }}
+        >
+          About
+        </Link>{" "}
+        |
+        <Link
+          to={"/contact"}
+          onClick={() => {
+            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+          }}
+        >
+          Contact
+        </Link>{" "}
+        |
+        <Link
+          to={"/policy"}
+          onClick={() => {
+            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+          }}
+        >
+          Privacy Policy
+        </Link>
       </p>
     </div>
   );

@@ -74,12 +74,20 @@ button:focus-visible {
   box-sizing: border-box;
 }
 
-.selector-for-some-widget {
+/* .selector-for-some-widget {
   box-sizing: content-box;
-}
+} */
 
 .nav-item:hover{
   border-bottom: 2px solid black;
+}
+
+.footer{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer p a{
@@ -90,4 +98,27 @@ button:focus-visible {
 }
 .footer p a:hover{
   color: rgb(200, 142, 83);
+}
+
+.navbar{
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 18px;
+  background-color: rgb(56, 115, 166) !important;
+}
+.navbar-brand{
+  color: aliceblue;
+  position: relative;
+  animation-name: example;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+.nav-item{
+  font-weight: 666;
+}
+
+
+@keyframes example {
+  0%   { left:0px; top:0px;}
+  50%  {left:16px; top:0px;}
+  100% { left:0px; top:0px;}
 }
