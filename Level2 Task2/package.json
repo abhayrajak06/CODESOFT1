@@ -5,7 +5,8 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"vite ./client\" \"nodemon ./server.js\""
   },
   "author": "Abhay Rajak",
   "license": "ISC",
@@ -16,5 +17,9 @@
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^7.6.3"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "vite": "^4.5.0"
   }
 }

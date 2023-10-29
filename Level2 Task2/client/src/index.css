@@ -122,3 +122,16 @@ button:focus-visible {
   50%  {left:16px; top:0px;}
   100% { left:0px; top:0px;}
 }
+
+.register{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+.register form{
+  background-color: rgb(204, 76, 76);
+  padding: 3rem;
+  width: 21rem;
+  border-radius: 1rem;
+}

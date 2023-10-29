@@ -3,7 +3,7 @@ import Layout from "../Layout/Layout";
 
 const Policy = () => {
   return (
-    <Layout>
+    <Layout title={"Job Board - Privacy Policy"}>
       <div className="container-fluid">
         <div className="row mt-5 p-2">
           <div className="col-md-6">
